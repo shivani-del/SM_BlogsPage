@@ -83,7 +83,7 @@ export default function BlogListingPage() {
               <button
                 key={category}
                 onClick={() => setActiveCategory(category)}
-                className={`relative px-4 py-2 text-xs md:text-sm font-bold rounded-full transition-all duration-200 shrink-0 select-none ${
+                className={`relative cursor-pointer px-4 py-2 text-xs md:text-sm font-bold rounded-full transition-all duration-200 shrink-0 select-none ${
                   isActive 
                     ? 'text-white bg-[#FF4D30] shadow-md' 
                     : 'text-slate-500 hover:text-slate-800 hover:bg-slate-100'
@@ -206,7 +206,7 @@ export default function BlogListingPage() {
             <button
               onClick={() => fetchNextPage()}
               disabled={isFetchingNextPage}
-              className="inline-flex items-center justify-center rounded-full border-2 border-slate-200 bg-white hover:border-[#FF4D30] hover:text-[#FF4D30] px-8 py-3.5 text-xs font-bold text-slate-600 shadow-sm transition-all duration-200 select-none disabled:opacity-75 disabled:cursor-not-allowed w-full sm:w-auto"
+              className="inline-flex cursor-pointer items-center justify-center rounded-full border-2 border-slate-200 bg-white hover:border-[#FF4D30] hover:text-[#FF4D30] px-8 py-3.5 text-xs font-bold text-slate-600 shadow-sm transition-all duration-200 select-none disabled:opacity-75 disabled:cursor-not-allowed w-full sm:w-auto"
             >
               {isFetchingNextPage ? (
                 <>
@@ -220,7 +220,7 @@ export default function BlogListingPage() {
           </div>
         )}
       </section>
-      
+
       <section className="space-y-6">
         <h2 className="text-2xl font-black text-slate-800 tracking-tight flex items-center space-x-2">
           <span className="block h-6 w-1 bg-[#FF4D30] rounded-full" />
