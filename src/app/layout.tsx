@@ -17,6 +17,28 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.ico',
   },
+  openGraph: {
+    title: 'AAVORide Blogs | Travel Stories & Road Trip Guides',
+    description: 'Stories that inform and inspire. Read travel tips, pilgrimage guides, luxury cab rental ideas, and discover the best routes in India with AAVORide.',
+    url: 'https://aavoride.in/blog',
+    siteName: 'AAVORide Blogs',
+    images: [
+      {
+        url: '/aavoride_blog_hero.png',
+        width: 1200,
+        height: 630,
+        alt: 'AAVORide Blogs - Stories That Inform and Inspire',
+      },
+    ],
+    locale: 'en_IN',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AAVORide Blogs | Travel Stories & Road Trip Guides',
+    description: 'Stories that inform and inspire. Read travel tips, pilgrimage guides, luxury cab rental ideas, and discover the best routes in India with AAVORide.',
+    images: ['/aavoride_blog_hero.png'],
+  },
 };
 
 export default function RootLayout({
